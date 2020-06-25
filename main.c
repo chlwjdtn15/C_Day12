@@ -29,8 +29,29 @@ void sub4() {
 
   int arr1[4]; 
   int* arr2; 
-  printf("%ld\n", (long)sizeof(sub1));
-  // 
+
+  
+  printf("%ld\n", (long)sizeof(arr1));
+  printf("%ld\n", (long)sizeof(arr2));
+
+  //#1
+  //arr1 // 배열의 이름 -> int형 주소값
+  //arr2 // 포인터 변수 -> int형 주소값
+
+  //#2
+  //arr1 초기값: arr1 첫번째 원소의 주소값
+  //arr2 초기값: 쓰레기값
+
+  //#3
+  //arr1 -> 자료형 * 길이 = 사이즈
+  //arr2 -> 8
+
+  //#4
+  //arr1 -> 상수 고로 변경 불가 (사이즈를 바꾸면 나중에 찾아가기 힘들어짐)
+  //arr2 -> 변수 고로 변경 가능
+
+
+
 }
 
 int main(void) {
