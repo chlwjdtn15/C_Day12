@@ -42,6 +42,10 @@ void sub4() {
   //arr1 초기값: arr1 첫번째 원소의 주소값
   //arr2 초기값: 쓰레기값
 
+  printf("%ld\n", (long)arr1);
+  printf("%ld\n", (long)&arr1[0]);
+  printf("%ld\n", (long)arr2);
+
   //#3
   //arr1 -> 자료형 * 길이 = 사이즈
   //arr2 -> 8
@@ -55,10 +59,39 @@ void sub4() {
 }
 
 int main(void) {
-  sub1();
-  sub2();
-  sub3();
-  sub4();
+  // sub1();
+  // sub2();
+  // sub3();
+  // sub4();
+
+
+
+  // 문제 : 문자배열을 만들고 거기에 문장 `abc`를 저장해주세요.
+  // 힌트 : c언어에서 모든 문장은\0( 널문자)로 끝나야 한다.
+
+  
+  // 구현시작
+  
+
+  for (int i = 0; i < 121; i++) {
+    printf("%c\n", i);
+  }
+
+
+
+  // 구현끝
+
+  // printf("%c%c%c\n", arr[0], arr[1], arr[2]);
+  // // //출력 => abc
+  
+  // // %s : 문장으로 출력한다.
+  // printf("%s\n", arr);
+  // // 출력 => abc
+
+  // // // %s : 문장으로 출력한다.
+  // printf("%s\n", &arr[0]);
+  // // //출력 => abc
+
   
   return 0;
 }
