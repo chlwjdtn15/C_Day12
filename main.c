@@ -72,8 +72,16 @@ int main(void) {
   
   // 구현시작
   
+  //숫자로 구하기
+  
+  // for (int i = 0; i <= 121; i++) {
+  //   printf("%d 이 숫자는 %c\n", i, i);
+  // }
 
-  for (int i = 0; i <= 121; i++) {
+  
+  //문자로 구하기
+
+  for (int i = 'a'; i <= 'z'; i++) {
     printf("%d 이 숫자는 %c\n", i, i);
   }
 
