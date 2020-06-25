@@ -73,8 +73,8 @@ int main(void) {
   // 구현시작
   
 
-  for (int i = 0; i < 121; i++) {
-    printf("%c\n", i);
+  for (int i = 0; i <= 121; i++) {
+    printf("%d 이 숫자는 %c\n", i, i);
   }
 
 
